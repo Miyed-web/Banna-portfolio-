@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <script src="https://kit.fontawesome.com/0cd1d7ed23.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  
+  <title>Niloy portfolio </title>
+</head>
+
+<body class="body">
+  <div class="prbar">
+    <div class="fill"></div>
+  </div>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img class="logo" src="download.png" alt="logo" />
+        <ul class="sideBar">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeBar()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openBar()"></i>
+      </nav>
+      
+      <div class="content">
+        <div class="text-content">
+          <span class="auto-type"> </span>
+          <h1>Hi, I am <span>Banna</span><br /> from Bangladesh</h1>
+          <div class="header-links">
+            <a href="https://github.com/Miyed-web"><i class="fa-brands fa-github"></i></a>
+           <a href="https://x.com/HasanuBanna134"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@codetooncosmos"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          
+        </div>
+        
+        <img class="image" src="IMG_20240629_165911_HDR-1.jpg" loading="lazy" alt="intro-image"
+         fetchPriority="high" />
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  <!-------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="IMG_20240629_165749_HDR~2.jpg" loading="lazy" alt="about-image"
+           fetchPriority="high" />
+          
+        </div>
+        <div class="about-col2">
+          <h1 class="sub-title">About me</h1>
+          <p>Hi everyone, I'm
+            <span>Hasanul Banna</span>. Hailing from Bangladesh, I'm a class 10 student with a serious itch for coding,
+            especially in frontend development. I've been building a strong foundation with HTML and CSS, and my
+            creations are already starting to take shape.
+            
+            But the learning journey never stops! I'm currently on a quest to unlock the power of JavaScript , C and Python,
+            expanding my skillset to tackle even more complex web projects. Get ready for some awesome frontends in the
+            making!
+            
+            
+            
+          </p>
+          
+          <div class="tab-title">
+            <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          
+          <div class="tab-contents active" id="skills">
+            <p>Software Engineering</p>
+            <h2> HTML</h2>
+            <div class="skill-progress-bar">
+              <div class="html" data-text="80%">
+                <span>20%</span>
+              </div>
+            </div>
+            <h2>CSS </h2>
+            <div class="skill-progress-bar">
+              <div class="css">
+                <span>25%</span>
+              </div>
+            </div>
+            <h2>JavaScript </h2>
+            <div class="skill-progress-bar">
+              <div class="js">
+                <span>15%</span>
+              </div>
+            </div>
+            <h2>C </h2>
+            <div class="skill-progress-bar">
+              <div class="c">
+                <span>40%</span>
+              </div>
+            </div>
+          </div>
+          <div id="experience" class="tab-contents">
+            <ul>
+              <li><span>2023 - now</span><br />Software Engineering</li>
+              <li><span>2023 - now</span><br />Programming hero<br />
+              </li>
+            </ul>
+            
+            
+            
+            
+          </div>
+          <div id="education" class="tab-contents">
+            <ul>
+              <li><span>2019</span><br />PSC</li>
+              <li><span>2022</span><br />JSC - auto pass</li>
+              <li>
+                <span>Currently learning</span><br />
+                <img src="https://i.postimg.cc/MGhkbyFz/pngwing-com-10.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <!-- -------services-------- -->
+  
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Web design</h2>
+          <p>"For my professional services in web design.
+            I provide expertise in here. I can help you with web design. Need help with Web Design? I've got you
+            covered!"</p>
+          <button class="learn-more-btn" role="button">Learn more</button>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Software Engineering</h2>
+          <p> "For my professional services in Software Engineering.
+            I provide expertise in here. I can help you with Fronted-developement. Need help with Software Engineering?
+            I've got you covered!" </p>
+          <button class="learn-more-btn" role="button">Learn more</button>
+        </div>
+        <div>
+          <i class="fa-solid fa-image"></i>
+          <h2>Photo design</h2>
+          <p>"For my professional services in Photo design.
+            I provide expertise in here. I can help you with Photo design. Need help with Photo design? I've got you
+            covered!"</p>
+          <button class="learn-more-btn" role="button">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------portfolio------ -->
+ <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        
+      </div>
+    </div>
+  </div>
+  <!-- -------contact-------- -->
+  
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact us</h1>
+      <div class="row">
+        <div class="contactInfo">
+          <div class="icon">
+            <div class="div">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info">
+              <h2>Address</h2>
+              <p>Atgaon, Bochagonj</p>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="div">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info">
+              <h2>Number</h2>
+              <p>+8801729750401</p>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="div">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info">
+              <h2>Email</h2>
+              <p>hasanulb134@gmail.com</p>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+        <div class="contactForm">
+          <form method="POST" id="form">
+            <input type="hidden" name="access_key" value="b167e6cd-bcc6-4651-9a90-ceacbbd3f714">
+            <input class="inputSubject" type="hidden" name="from_name" value="niloy">
+            
+            <h2>Enter your message</h2>
+            <div class="userBox">
+              <input class="userName" name="Name" type="text" required="required" placeholder="Enter your name" />
+              <span class="required"></span>
+            </div>
+            <div class="userBox">
+              <input type="email" name="Email" required="required" placeholder="Enter your email" />
+              <span class="required"></span>
+            </div>
+            <div class="userBox">
+              <textarea name="Message" placeholder="Enter your message..." required="required"></textarea>
+              <span class="required"></span>
+            </div>
+            <div class="userBox">
+              <button type="submit">Send</button>
+            </div>
+            <p id="result"></p>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        
+        <a href="https://github.com/Miyed-web"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtube.com/@codetooncosmos"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://x.com/HasanuBanna134"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      
+      <p>Copyright ©️ to Banna. Made with ♥️ in BD</p>
+    </div>
+    
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js"></script>
+  
+</body>
+
+</html>
