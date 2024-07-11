@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Banna portfolio </title>
 </head>
 
@@ -58,12 +58,12 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="about-col1">
+        <div data-aos="zoom-in" class="about-col1">
           <img src="IMG_20240629_165749_HDR~2.jpg" loading="lazy" alt="about-image"
            fetchPriority="high" />
           
         </div>
-        <div class="about-col2">
+        <div data-aos="zoom-in" class="about-col2">
           <h1 class="sub-title">About me</h1>
           <p>Hi everyone, I'm
             <span>Hasanul Banna</span>. Hailing from Bangladesh, I'm a class 10 student with a serious itch for coding,
@@ -145,8 +145,8 @@
   
   <div id="services">
     <div class="container">
-      <h1 class="sub-title">My services</h1>
-      <div class="services-list">
+      <h1 data-aos="zoom-in" class="sub-title">My services</h1>
+      <div data-aos="zoom-in" class="services-list">
         <div>
           <i class="fa-solid fa-crop"></i>
           <h2>Web design</h2>
@@ -177,7 +177,7 @@
   <!-- -------portfolio------ -->
  <div id="portfolio">
     <div class="container">
-      <h1 class="sub-title">My Projects</h1>
+      <h1 data-aos="zoom-in" class="sub-title">My Projects</h1>
       <div class="work-list">
         
       </div>
@@ -187,10 +187,10 @@
   
   <div id="contact">
     <div class="container">
-      <h1 class="sub-title">Contact us</h1>
+      <h1 data-aos="zoom-in" class="sub-title">Contact us</h1>
       <div class="row">
         <div class="contactInfo">
-          <div class="icon">
+          <div data-aos="zoom-in" class="icon">
             <div class="div">
               <i class="fa-solid fa-location-dot"></i>
             </div>
@@ -199,7 +199,7 @@
               <p>Atgaon, Bochagonj</p>
             </div>
           </div>
-          <div class="icon">
+          <div data-aos="zoom-in" class="icon">
             <div class="div">
               <i class="fa-solid fa-phone"></i>
             </div>
@@ -208,7 +208,7 @@
               <p>+8801729750401</p>
             </div>
           </div>
-          <div class="icon">
+          <div data-aos="zoom-in" class="icon">
             <div class="div">
               <i class="fa-solid fa-envelope"></i>
             </div>
@@ -222,7 +222,7 @@
           
         </div>
         <div class="contactForm">
-          <form method="POST" id="form">
+          <form data-aos="zoom-in" method="POST" id="form">
             <input type="hidden" name="access_key" value="b167e6cd-bcc6-4651-9a90-ceacbbd3f714">
             <input class="inputSubject" type="hidden" name="from_name" value="niloy">
             
@@ -270,6 +270,10 @@
     </div>
     
   </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="data.js"></script>
   <script src="index.js"></script>
